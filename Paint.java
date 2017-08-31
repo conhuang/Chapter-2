@@ -31,7 +31,7 @@ public class Paint
 
         paintNeeded = totalSqFt/COVERAGE;
 
-        System.out.println ("Length = " + length + " ft\nWidth = "
+        System.out.println ("\nLength = " + length + " ft\nWidth = "
                              + width + " ft\nHeight = " + height +
                              " ft\nGallons of paint needed to paint the walls: "
                              + paintNeeded + " gal");
