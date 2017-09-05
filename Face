@@ -1,0 +1,35 @@
+import java.applet.Applet;
+import java.awt.*;
+public class Face extends Applet
+{
+    public void paint (Graphics page)
+    {
+        Color skin = new Color (255,178,102);
+        Color background = new Color (0,255,128);
+        setBackground (background);
+        page.setColor (Color.black);
+        page.fillRect (95,250,300,350);//hair
+        page.setColor(skin);
+        page.fillOval (95,100,300,300);//face
+        page.setColor (Color.white);
+        page.fillOval (155,235, 50,25);//left eye
+        page.fillOval (275,235, 50,25);//right eye
+        page.setColor (Color.black);
+        page.drawOval (275,235, 50,25);
+        page.drawOval (155,235, 50,25);
+        page.setColor (Color.black);
+        page.fillOval (168, 235,25,25);//left pupil
+        page.fillOval (288, 235,25,25);//right pupil
+        page.drawArc (147,227, 52, 8, 15,150);//left eyebrow
+        page.drawArc (275,227, 52,8,15, 150);//right eyebrow
+        page.fillRoundRect (100,100, 275,75,90,90);
+        page.fillOval (337,115,70,225);
+        page.fillOval (80,115,70,225);
+        page.drawLine (240,280,230,300);
+        page.drawLine (230,300,245,300);
+        Color lip = new Color (255,102,102);
+        page.setColor (lip);
+        page.fillArc (195, 300, 100,50,170, 190);
+        
+    }
+}
